@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>vue学习笔记</title>
+</head>
+<body>
+<div id="app">
+    <h1>{{title}}</h1>
+    <h2>Author：{{author.name}}</h2>
+    <hr>
+    <h3>目录</h3>
+    <ol>
+        <li v-for="item in catalog">{{item}}</li>
+    </ol>
+    <br>
+
+    <h3>
+        {{catalog[0]}}
+    </h3>
+    <hr>
+    <p>
+        <b>el挂载数据</b><br>
+        通过标签识别选择器:<br>
+        #*：识别id=*（推荐，id选择器不会重名）<br>
+        .*：识别app=*
+    </p>
+    <br>
+
+    <h3>
+        {{catalog[1]}}
+    </h3>
+    <hr>
+
+    <p>
+    <b>data的三种数据对象类型：</b><br>
+    文本:" ",<br>
+    对象:{<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;属性1: " ",<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;属性2: " "<br>
+    },<br>
+    列表: ["元素1","元素2"]
+    </p>
+    <br>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    var app = new Vue({
+        el: "#app",
+        data: {
+            title: "Vue学习笔记",
+            author: {
+                name: "Qianqi Tang"
+            },
+            catalog: ["el挂载点", "data数据对象"]
+        }
+
+    })
+</script>
+</body>
+</html>
