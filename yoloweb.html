@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-    <title>目标检测系统</title>
+    <title>Underwater Object Detection System</title>
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- <link rel="stylesheet" href="D:\WEB\static\style.css"> -->
   </head>
 <body>
-    <h2 id="title">目标检测系统</h2>
+    <h2 id="title">Underwater Object Detection System</h2>
     <br>
     <br>
-    <img id="imageDisplay" width="500" height="500" src="./images/src.jpg">
-    <img id="result_show" width="500" height="500" src="./images/pred.jpg">
+    <img id="imageDisplay" width="480" height="480" src="./images/src.jpg">
+    <img id="result_show" width="480" height="480" src="./images/pred.jpg">
     <br>
     <form method="POST" enctype="multipart/form-data">
       <br>
-      <input type="file" id="imageFile" onchange="displayImage()" <input="" name="file">
+      <input type="file" id="imageFile" onchange="displayImage()" name="file">
         <br>
-        <input id="button_detect" type="submit" value="开始检测">
+        <input id="button_detect" type="submit" value="start">
     </form>
     <br>
     <div id="imagePath"></div>
@@ -39,7 +39,7 @@
     </script>
       <!-- <button id="my-button" onclick="Detect()">检测</button> -->
       <a href="http://127.0.0.1:5000/sh">
-          <button id="button_show" onclick="Show()">显示图片</button>
+          <button id="button_show" onclick="Show()">show</button>
       </a>
       
   
@@ -51,7 +51,7 @@
     background-color: cadetblue;
 }
     #imageDisplay{
-        margin-left: 350px;
+        margin-left: 250px;
         position: relative;
     }
     #button_detect{
@@ -59,7 +59,7 @@
       height: 40px;
       background-color: skyblue;
       font-size: larger;
-      margin-left: 900px;
+      margin-left: 750px;
       margin-top: auto;
     }
     #button_show{
@@ -67,7 +67,7 @@
       height: 40px;
       background-color: skyblue;
       font-size: larger;
-      margin-left:900px;
+      margin-left:750px;
       margin-top: auto;
     }
     #imageFile{
@@ -75,13 +75,13 @@
       height: 40px;
       background-color:white;
       font-size: larger;
-      margin-left:900px;
+      margin-left:750px;
       margin-top: auto;
     }
     #result_show{
-      height: 500px;
-      width: 500px;
-      margin-left: 200px;
+      height: 480px;
+      width: 480px;
+      margin-left: 250px;
       
     }
   </style>
