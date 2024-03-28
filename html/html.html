@@ -23,6 +23,8 @@
         <li>视频</li>
         <li>链接</li>
         <li>列表</li>
+        <li>表格</li>
+        <li>表单</li>
     </ol>
     <br>
 
@@ -105,7 +107,10 @@
         frameborder="0"：不显示嵌入框架的边框<br>
         allowfullscreen：允许全屏<br>
         示例视频：<br>
-        <iframe width="960" height="540" src="https://www.youtube.com/embed/__Gh--arNsk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="960" height="540" src="https://www.youtube.com/embed/__Gh--arNsk" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
     </p>
     <br>
 
@@ -126,27 +131,107 @@
     <h3>列表</h3>
     <hr>
     <p>
-        <dl>
-            <dt>ul: Unordered List（无序列表）</dt>
-            <dd><ul>
+    <dl>
+        <dt>ul: Unordered List（无序列表）</dt>
+        <dd>
+            <ul>
                 <li>li: List Item（列表项1）</li>
                 <li>li: List Item（列表项2）</li>
-            </ul></dd>
-            <dt>ol: Ordered List（有序列表）</dt>
-            <dd><ol>
+            </ul>
+        </dd>
+        <dt>ol: Ordered List（有序列表）</dt>
+        <dd>
+            <ol>
                 <li>li: List Item（列表项1）</li>
                 <li>li: List Item（列表项2）</li>
-            </ol></dd>
-            <dt>dl：Definition List（定义列表）</dt>
-            <dd><dl>
+            </ol>
+        </dd>
+        <dt>dl：Definition List（定义列表）</dt>
+        <dd>
+            <dl>
                 <dt>dt：Definition Term（定义术语）</dt>
                 <dd>dd：Definition Description（定义描述1）</dd>
                 <dd>dd：Definition Description（定义描述2）</dd>
-            </dl></dd>
-        </dl>
+            </dl>
+        </dd>
+    </dl>
     </p>
+    <br>
 
+    <h3>表格</h3>
     <hr>
+    <p>
+        table：表格<br>
+        border:table标签的属性<br>
+        th:table header标题<br>
+        td:table data元素
+    </p>
+    <table border="1">
+        <tr>
+            <th>th1</th>
+            <th>th2</th>
+            <th>th3</th>
+            <th>th4</th>
+        </tr>
+        <tr>
+            <td>td11</td>
+            <td>td12</td>
+            <td>td13</td>
+            <td>td14</td>
+
+        </tr>
+        <tr>
+            <td>td21</td>
+            <td>td22</td>
+            <td>td23</td>
+            <td>td24</td>
+        </tr>
+        <tr>
+            <td>td31</td>
+            <td>td32</td>
+            <td>td33</td>
+            <td>td34</td>
+        </tr>
+        <tr>
+            <td>td41</td>
+            <td>td42</td>
+            <td>td43</td>
+            <td>td44</td>
+        </tr>
+    </table>
+    <br>
+
+    <h3>表单</h3>
+    <hr>
+    <div class="content">
+        form:表单的标签<br>
+        form属性1：input<br>
+        type:输入内容属性 常用有text、password、radio、checkbox、submit、action<br><br>
+
+    </div>
+    <form action="#">
+        <label for="username">用户名：</label>
+        <input type="text" id="username" placeholder="请输入用户名"><br><br>
+
+        <label for="pwd">密码：</label>
+        <input type="password" id="pwd" placeholder="请输入密码"><br><br>
+
+        <label for="">性别</label>
+        <input type="radio" name="gender">男
+        <input type="radio" name="gender">女
+        <input type="radio" name="gender">保密<br><br>
+
+        <label for="hobby">爱好：</label>
+        <input type="checkbox" name="hobby">唱
+        <input type="checkbox" name="hobby">跳
+        <input type="checkbox" name="hobby">rap
+        <input type="checkbox" name="hobby">篮球<br><br>
+
+        <input type="submit" value="提交资料">
+
+    </form>
+
+    <br>
     <p>Developing...</p>
 </body>
 
